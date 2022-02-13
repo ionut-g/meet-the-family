@@ -1,0 +1,7 @@
+language: python
+python: 
+  - "3.10.1"
+initial:
+  - pip install -r requiremente.txt
+script:
+  - pthon -m unittest discover -s "./tests/unit/" -p "test_*.py"
